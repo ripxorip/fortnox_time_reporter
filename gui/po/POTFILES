@@ -1,0 +1,6 @@
+data/org.ripxorip.fortnox_time_reporter.desktop.in
+data/org.ripxorip.fortnox_time_reporter.appdata.xml.in
+data/org.ripxorip.fortnox_time_reporter.gschema.xml
+src/main.c
+src/fortnox_time_reporter-window.c
+src/fortnox_time_reporter-window.ui

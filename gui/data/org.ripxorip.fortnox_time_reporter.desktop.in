@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=fortnox_time_reporter
+Exec=fortnox_time_reporter
+Icon=org.ripxorip.fortnox_time_reporter
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
