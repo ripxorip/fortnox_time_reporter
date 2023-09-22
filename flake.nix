@@ -34,5 +34,7 @@
       devShells.default = with pkgs; pkgs.mkShell {
         packages = [ fortnox_time_reporter fortnox_cli ];
       };
+
+      defaultPackage = fortnox_time_reporter;
     });
 }

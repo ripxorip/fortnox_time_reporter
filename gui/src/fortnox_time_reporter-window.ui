@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <requires lib="gtk" version="4.0"/>
-  <requires lib="Adw" version="1.0"/>
+  <requires lib="gtk" version="4.0" />
+  <requires lib="Adw" version="1.0" />
   <template class="FortnoxTimeReporterWindow" parent="AdwApplicationWindow">
     <property name="default-width">600</property>
     <property name="default-height">300</property>
@@ -19,14 +19,57 @@
           </object>
         </child>
         <child>
-          <object class="GtkLabel" id="label">
-            <property name="label">Hello, World!</property>
-            <property name="vexpand">true</property>
-            <style>
-              <class name="title-1"/>
-            </style>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="margin-start">80</property>
+            <property name="margin-end">80</property>
+            <property name="margin-top">20</property>
+            <property name="margin-bottom">20</property>
+            <property name="spacing">12</property>
+            <child>
+              <object class="GtkLabel" id="label">
+                <property name="label">Fortnox Time Reporter</property>
+                <property name="vexpand">true</property>
+                <style>
+                  <class name="title-1" />
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">horizontal</property>
+                <property name="spacing">12</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label">Project:</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkComboBoxText">
+                    <property name="hexpand">true</property>
+                    <items>
+                      <item>Option 1</item>
+                      <item>Option 2</item>
+                      <item>Option 3</item>
+                    </items>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkButton">
+                <property name="label">Start reporting</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label">Stop reporting</property>
+              </object>
+            </child>
           </object>
         </child>
+
       </object>
     </child>
   </template>
