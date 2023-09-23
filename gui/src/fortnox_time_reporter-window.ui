@@ -30,23 +30,13 @@
             <property name="spacing">12</property>
             <child>
               <object class="GtkLabel" id="label">
-                <property name="label">Fortnox Time Reporter</property>
+                <property name="label">00:00</property>
                 <property name="vexpand">true</property>
                 <style>
                   <class name="title-1" />
                 </style>
               </object>
             </child>
-
-            <child>
-              <object class="GtkLabel" id="time_label">
-                <property name="label">00:00</property>
-                <style>
-                  <class name="title-2" />
-                </style>
-              </object>
-            </child>
-
 
             <child>
               <object class="GtkBox">

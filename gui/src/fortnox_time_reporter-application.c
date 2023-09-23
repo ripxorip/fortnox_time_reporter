@@ -56,6 +56,8 @@ fortnox_time_reporter_application_activate (GApplication *app)
 		                       "application", app,
 		                       NULL);
 
+	gtk_window_set_title (GTK_WINDOW (window), "Fortnox Time Reporter");
+
 	gtk_window_present (window);
 }
 
@@ -72,7 +74,7 @@ fortnox_time_reporter_application_about_action (GSimpleAction *action,
                                                 GVariant      *parameter,
                                                 gpointer       user_data)
 {
-	static const char *developers[] = {"Unknown", NULL};
+	static const char *developers[] = {"Philip K. Gisslow", NULL};
 	FortnoxTimeReporterApplication *self = user_data;
 	GtkWindow *window = NULL;
 
@@ -81,12 +83,12 @@ fortnox_time_reporter_application_about_action (GSimpleAction *action,
 	window = gtk_application_get_active_window (GTK_APPLICATION (self));
 
 	adw_show_about_window (window,
-	                       "application-name", "fortnox_time_reporter",
+	                       "application-name", "Fortnox Time Reporter",
 	                       "application-icon", "org.ripxorip.fortnox_time_reporter",
-	                       "developer-name", "Unknown",
+	                       "developer-name", "Philip K. Gisslow",
 	                       "version", "0.1.0",
 	                       "developers", developers,
-	                       "copyright", "© 2023 Unknown",
+	                       "copyright", "© 2023 Philip K. Gisslow",
 	                       NULL);
 }
 
