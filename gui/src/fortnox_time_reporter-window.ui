@@ -42,7 +42,7 @@
               <object class="GtkLabel" id="time_label">
                 <property name="label">00:00</property>
                 <style>
-                  <class name="title-1" />
+                  <class name="title-2" />
                 </style>
               </object>
             </child>
@@ -58,6 +58,10 @@
                   <object class="GtkButton">
                     <property name="label">Reset</property>
                     <property name="hexpand">false</property>
+
+                    <style>
+                      <!-- <class name="destructive-action" /> -->
+                    </style>
                   </object>
                 </child>
 
@@ -91,13 +95,16 @@
                 <property name="label">Start timer</property>
                 <property name="name">start_button</property>
                 <style>
-                  <class name="start-button" />
+                  <class name="start_button" />
                 </style>
               </object>
             </child>
             <child>
               <object class="GtkButton">
                 <property name="label">Finish report</property>
+                <style>
+                  <class name="suggested-action" />
+                </style>
               </object>
             </child>
             <child>
@@ -112,7 +119,7 @@
               <object class="GtkLabel">
                 <property name="label">Manual entry (hours)</property>
                 <style>
-                  <class name="title-1" />
+                  <class name="title-2" />
                 </style>
               </object>
             </child>
@@ -125,6 +132,9 @@
             <child>
               <object class="GtkButton">
                 <property name="label">Report</property>
+                <style>
+                  <class name="suggested-action" />
+                </style>
               </object>
             </child>
 
