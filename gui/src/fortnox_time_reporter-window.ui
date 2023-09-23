@@ -22,9 +22,11 @@
           <object class="GtkBox">
             <property name="orientation">vertical</property>
             <property name="margin-start">80</property>
-            <property name="margin-end">80</property>
+            <property
+              name="margin-end">80</property>
             <property name="margin-top">20</property>
-            <property name="margin-bottom">20</property>
+            <property
+              name="margin-bottom">20</property>
             <property name="spacing">12</property>
             <child>
               <object class="GtkLabel" id="label">
@@ -35,6 +37,34 @@
                 </style>
               </object>
             </child>
+
+            <child>
+              <object class="GtkLabel" id="time_label">
+                <property name="label">00:00</property>
+                <style>
+                  <class name="title-1" />
+                </style>
+              </object>
+            </child>
+
+
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">horizontal</property>
+                <property name="spacing">12</property>
+                <property name="halign">center</property>
+
+                <child>
+                  <object class="GtkButton">
+                    <property name="label">Reset</property>
+                    <property name="hexpand">false</property>
+                  </object>
+                </child>
+
+              </object>
+            </child>
+
+
             <child>
               <object class="GtkBox">
                 <property name="orientation">horizontal</property>
@@ -56,23 +86,54 @@
                 </child>
               </object>
             </child>
+            ss <child>
+              <object class="GtkButton">
+                <property name="label">Start timer</property>
+                <property name="name">start_button</property>
+                <style>
+                  <class name="start-button" />
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label">Finish report</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparator">
+                <property name="visible">True</property>
+                <property name="orientation">vertical</property>
+              </object>
+            </child>
+
+
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Manual entry (hours)</property>
+                <style>
+                  <class name="title-1" />
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkEntry">
+                <property name="hexpand">true</property>
+              </object>
+            </child>
 
             <child>
               <object class="GtkButton">
-                <property name="label">Start reporting</property>
+                <property name="label">Report</property>
               </object>
             </child>
-            <child>
-              <object class="GtkButton">
-                <property name="label">Stop reporting</property>
-              </object>
-            </child>
+
           </object>
         </child>
-
       </object>
     </child>
   </template>
+
   <menu id="primary_menu">
     <section>
       <item>
