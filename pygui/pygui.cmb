@@ -56,8 +56,8 @@
 	(2,5,"GtkWidget","margin-end","80",None,None,None,None,None,None,None,None,None),
 	(2,5,"GtkWidget","margin-start","80",None,None,None,None,None,None,None,None,None),
 	(2,5,"GtkWidget","margin-top","20",None,None,None,None,None,None,None,None,None),
+	(2,5,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None),
 	(2,6,"GtkLabel","label","Fortnox Time Reporter",None,None,None,None,None,None,None,None,None),
-	(2,6,"GtkWidget","vexpand","true",None,None,None,None,None,None,None,None,None),
 	(2,7,"GtkLabel","label","00:00",None,None,None,None,None,None,None,None,None),
 	(2,8,"GtkBox","spacing","12",None,None,None,None,None,None,None,None,None),
 	(2,8,"GtkOrientable","orientation","horizontal",None,None,None,None,None,None,None,None,None),
@@ -103,8 +103,8 @@
 	(2,18,"GtkWidget",2,2,None,1,None,None,None,None)
   </object_data>
   <object_data_arg>
-	(2,6,"GtkWidget",2,2,"name","title-1"),
-	(2,7,"GtkWidget",2,2,"name","title-2"),
+	(2,6,"GtkWidget",2,2,"name","title-2"),
+	(2,7,"GtkWidget",2,2,"name","title-1"),
 	(2,12,"GtkComboBoxText",2,2,"id",None),
 	(2,12,"GtkComboBoxText",2,3,"id",None),
 	(2,12,"GtkComboBoxText",2,4,"id",None),

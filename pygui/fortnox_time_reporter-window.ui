@@ -31,20 +31,20 @@
             <property name="margin-top">20</property>
             <property name="orientation">vertical</property>
             <property name="spacing">12</property>
+            <property name="vexpand">True</property>
             <child>
               <object class="GtkLabel" id="label">
                 <property name="label">Fortnox Time Reporter</property>
-                <property name="vexpand">true</property>
                 <style>
-                  <class name="title-1"/>
+                  <class name="title-2"/>
                 </style>
               </object>
             </child>
             <child>
-              <object class="GtkLabel" id="time_label">
+              <object class="GtkLabel" id="timeLabel">
                 <property name="label">00:00</property>
                 <style>
-                  <class name="title-2"/>
+                  <class name="title-1"/>
                 </style>
               </object>
             </child>
@@ -54,7 +54,7 @@
                 <property name="orientation">horizontal</property>
                 <property name="spacing">12</property>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="resetButton">
                     <property name="hexpand">false</property>
                     <property name="label">Reset</property>
                     <style/>
@@ -93,7 +93,7 @@
               </object>
             </child>
             <child>
-              <object class="GtkButton">
+              <object class="GtkButton" id="finishReportButton">
                 <property name="label">Finish report</property>
                 <style>
                   <class name="suggested-action"/>
@@ -115,12 +115,12 @@
               </object>
             </child>
             <child>
-              <object class="GtkEntry">
+              <object class="GtkEntry" id="manualEntryField">
                 <property name="hexpand">true</property>
               </object>
             </child>
             <child>
-              <object class="GtkButton">
+              <object class="GtkButton" id="reportButton">
                 <property name="label">Report</property>
                 <style>
                   <class name="suggested-action"/>
