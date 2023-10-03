@@ -26,6 +26,7 @@
 
       fortnox_cli = pkgs.callPackage ./cli { };
       fortnox_time_reporter = pkgs.callPackage ./gui { };
+      pygui = pkgs.callPackage ./pygui { };
 
     in
     {
@@ -35,6 +36,9 @@
         packages = [ fortnox_time_reporter fortnox_cli ];
       };
 
-      defaultPackage = fortnox_time_reporter;
+      packages = {
+          default = pygui;
+          pygui = pygui;
+      };
     });
 }
